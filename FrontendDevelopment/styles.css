@@ -1,0 +1,295 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    max-width: 60px; /* Adjust logo size here */
+    height: auto;
+}
+
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section styles */
+.hero {
+    background: linear-gradient(to right, #3becd1, #05dfe7); /* Gradient from blue to light blue */
+    color: #fff;
+    text-align: center;
+    padding: 120px 0; /* Increased padding to ensure no overlap */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.cta-button {
+    background: #fff;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block; /* Ensure proper spacing around button */
+    margin-top: 20px; /* Add margin to ensure space between text and button */
+}
+
+/* Services section styles */
+#services {
+    background: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#services h2 {
+    margin-bottom: 30px;
+}
+
+.service {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+
+/* Contact section styles */
+#contact {
+    padding: 50px 0;
+    text-align: center; /* Center the heading and box */
+}
+
+#contact h2 {
+    margin-bottom: 20px; /* Space between heading and box */
+}
+
+.contact-box {
+    display: inline-block; /* Make the box inline to center it */
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Adjust max-width as needed */
+    width: 100%;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box label {
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.contact-box input, 
+.contact-box textarea {
+    max-width: 400px; /* Adjust max-width to shorten the input boxes */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-box button {
+    background:  #05dfe7;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    max-width: 150px; /* Adjust max-width to shorten the button */
+    width: 100%; /* This will make the button responsive within the max-width */
+    margin: 0 auto; /* Center the button */
+}
+
+
+
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
+/* Weather Section */
+#weather {
+    background:#ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.weather-card {
+    background: #e6f9ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.weather-card h3 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.weather-card p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.weather-card .weather-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+/* News Section */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Center the cards */
+}
+
+.news-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.33% - 20px); /* Three cards per row with gap */
+    max-width: 300px;
+    height: 250px; /* Fixed height for consistency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 10px; /* Margin to space out the cards */
+}
+
+.news-card img {
+    width: 100%;
+    height: 150px; /* Fixed height for image */
+    object-fit: cover; /* Cover the container without distortion */
+}
+
+.news-card h4 {
+    font-size: 1.1em;
+    margin: 10px;
+}
+
+.news-card p {
+    font-size: 0.9em;
+    margin: 0 10px 10px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Ensure text stays on one line */
+}
+
+.news-card a {
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 1024px) {
+    .news-card {
+        width: calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .news-card {
+        width: 100%; /* Full width on small screens */
+        max-width: none; /* Remove max-width on small screens */
+    }
+}

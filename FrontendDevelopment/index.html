@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proeze Digital Marketing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header-container">
+                <div class="logo-container">
+                    <a href="#"><img src="./images/logo.jpeg" alt="Proeze Logo" class="logo"></a>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#weather">Weather</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Elevate Your Digital Presence</h1>
+            <p>Transform your business with our expert digital marketing services.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service">
+                    <h3>IT Infrastructure Optimization</h3>
+                    <p>Enhance your company's IT infrastructure to improve performance, security, and operational efficiency with Teceze's expert solutions.</p>
+                </div>
+                <div class="service">
+                    <h3>Cybersecurity Services</h3>
+                    <p>Safeguard your business against evolving cyber threats with Teceze's advanced cybersecurity solutions, ensuring robust protection across all networks and devices.</p>
+                </div>
+                <div class="service">
+                    <h3>Cloud Solutions</h3>
+                    <p>Leverage Teceze's cutting-edge cloud solutions to scale your business, improve flexibility, and reduce operational costs while maintaining data security.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="weather">
+        <div class="container">
+            <h2>Current Weather</h2>
+            <div id="weather-info" class="weather-card">
+                <p>Loading weather information...</p>
+            </div>
+        </div>
+    </section>
+   
+    <section id="news">
+        <div class="container">
+            <h2>Latest Technology News</h2>
+            <div id="news-container" class="news-container">
+                <!-- News articles will be injected here -->
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-box">
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; TECEZE Digital Innovation 🙲 Excellence. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
